@@ -1,0 +1,77 @@
+body{
+    text-align: center;
+    margin: 0;
+    background-color: #121212;
+    color : aliceblue ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+li{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: black; */
+    width: 90%;
+    /* padding: 10px 0px; */
+    transition: box-shadow ease-in-out .2s,
+    border-radius ease-in-out .2s;
+    border-radius: 20px;
+
+
+}
+
+ul li:hover{
+    box-shadow: 0 0 10px 0 aliceblue;
+}
+
+li p{
+    width: 10%;
+    text-align: left;
+}
+
+
+a i{
+    /* background-color: red; */
+    color: red;
+    transition: all ease-in-out .3s;
+}
+
+a i:hover{
+    /* background-color: red; */
+    color: rgb(236, 63, 63);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+form input{
+    width: 50%;
+    background-color: rgba(240, 248, 255, 0.123);
+    border-radius: 10px;
+    height: 5vh;
+    border: none;
+    text-align: center;
+    margin: 10px 0px;
+    /* padding: 0px 0px ; */
+}
+
+form button{
+    background-color: rgb(29, 0, 190);
+    border: none;
+    color: aliceblue;
+    width: 20%;
+    height: 5vh;
+    border-radius: 10px ;
+    transition: background-color .2s ease-in-out;
+}
+
+ button:hover {
+    background-color: rgb(61, 27, 255);
+}
