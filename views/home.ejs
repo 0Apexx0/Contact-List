@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <h1>
+        <i class="fas fa-id-card"></i>
+        Contact List
+    </h1>
+    <div>
+        <ul>
+            <% for(let i of contact_List) { %>
+            <li>
+                <p>
+                    <%= i.name %>
+                </p>
+                <p>
+                    <%= i.phone %>
+                </p>
+                <div class="delete-button">
+                    <a href="/delete-contact/?id=<%= i._id %>">
+                        <i class="fa fa-window-close"></i>
+                    </a>
+                </div>
+                
+            </li>
+            <% } %>
+        </ul>
+    </div>
+
+    <form action="/create-contact" method="POST">
+
+        <input type="text" name="name" placeholder="enter the name" required>
+        <input type="number" name="phone" placeholder="enter the number" required>
+
+        <button type="submit"> Add Contact</button>
+    </form>
+
+    <script src="js/home.js"></script>
+</body>
+</html>
