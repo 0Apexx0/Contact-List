@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 
 //  connect to the datasbase
-mongoose.connect('mongodb://localhost/contact_list_db');
+mongoose.connect('mongodb+srv://aditya:aditya123@cluster0.7kvvg.mongodb.net/contact_list_db');
 
 // acquire the connection ( to check if it susccessfull )
 const db = mongoose.connection;
